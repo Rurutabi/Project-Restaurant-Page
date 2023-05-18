@@ -28,10 +28,13 @@ export class nav {
 
     const list1 = document.createElement("li");
     list1.textContent = "Home";
+    list1.classList.add("home");
     const list2 = document.createElement("li");
     list2.textContent = "Menu";
+    list2.classList.add("menu");
     const list3 = document.createElement("li");
     list3.textContent = "Contact";
+    list3.classList.add("contact");
 
     listContainer.appendChild(list1);
     listContainer.appendChild(list2);

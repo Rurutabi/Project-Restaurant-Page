@@ -41,13 +41,16 @@ body {
 .heading {
   font-size: 1.6rem;
   font-weight: bold;
+  font-style: italic;
 }
 
 li {
   list-style-type: none;
+  font-size: 1.2rem;
+  font-style: italic;
 }
 
-.home {
+.home-container {
   display: flex;
   justify-content: center;
   margin-top: 4%;
@@ -62,15 +65,20 @@ li {
   background-color: white;
   width: 600px;
   padding: 24px;
-  gap: 18px;
+  gap: 24px;
   box-shadow: var(--shadow);
 }
 
 .img {
   width: 250px;
   height: 250px;
+  border-radius: 25%;
 }
 
 .par {
   font-size: 18px;
+}
+
+.hide {
+  display: none;
 }
