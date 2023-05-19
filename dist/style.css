@@ -71,6 +71,7 @@ li {
   padding: 24px;
   gap: 24px;
   box-shadow: var(--shadow);
+  animation: fadeIn 1s;
 }
 
 .menubox {
@@ -92,6 +93,8 @@ li {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
   gap: 48px;
   grid-template-columns: 1fr 1fr;
 }
@@ -102,6 +105,15 @@ li {
   height: 150px;
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 24px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*Display none*/

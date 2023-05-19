@@ -14,10 +14,14 @@ export class menu {
 
     this.container.appendChild(menuContainer);
 
-    const menuBox = document.createElement("menubox");
+    const menuBox = document.createElement("div");
     menuBox.classList.add("menubox");
-    menuBox.textContent = "Menu list";
+
     menuContainer.appendChild(menuBox);
+
+    const menuHeading = document.createElement("h1");
+    menuHeading.textContent = "Menu List";
+    menuBox.appendChild(menuHeading);
 
     const gridContainer = document.createElement("div");
     gridContainer.classList.add("grid-container");
@@ -26,7 +30,7 @@ export class menu {
     //Create mutiple grid at once
     for (let i = 0; i < this.gridNumber; i++) {
       const grid = document.createElement("div");
-      grid.textContent = `menu ${i + 1}`;
+      grid.textContent = `Menu ${i + 1}`;
       grid.classList.add("grid");
       grid.classList.add(`gridnumber${i}`);
       gridContainer.appendChild(grid);
